@@ -23,6 +23,10 @@ section {
   background-color: #eaeaea !important;
 }
 
+#myProject {
+  background-color: white;
+}
+
 .container {
   background-color: white;
   margin-top: 60px auto;
@@ -33,6 +37,11 @@ section {
 .card {
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  text-decoration: none;
+  color: black;
 }
 /* nav {
   background-color: #f4f3f3;
