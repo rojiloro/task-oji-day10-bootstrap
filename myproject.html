@@ -63,97 +63,75 @@
         </div>
       </div>
     </nav>
-
-    <div class="project">
-      <div class="project-form">
-        <div class="form-container">
-          <form onsubmit="addProject(event)">
-            <h1>ADD MY PROJECT</h1>
-            <div>
-              <label for="input-project-name">Project Name</label>
-              <input type="text" id="input-project-name" />
-            </div>
-
-            <div class="input-date">
-              <div>
-                <label for="input-start-date">Start Date</label>
-                <input type="date" id="input-start-date" />
+        <div class="row">
+          <div class="col-md fs-5">
+            <form onsubmit="addProject(event)">
+              <h1 class="text-center fs-3 fw-bold">ADD MY PROJECT</h1>
+              <div class="mb-3">
+                <label for="input-project-name" class="form-label">Project Name</label>
+                <input type="text" class="form-control" id="input-project-name" />
               </div>
-              <div>
-                <label for="input-end-date">End Date</label>
-                <input type="date" id="input-end-date" />
-              </div>
-            </div>
-
-            <div>
-              <label for="description">Description</label>
-              <textarea id="description"></textarea>
-            </div>
-            <div>
-              <label for="tech">Technologies</label>
-              <div class="tech">
-                <div class="kotak">
-                  <label for="playstore">
-                    <input type="checkbox" id="playstore"> Playstore </input>
-                  </label>
-                  <label for="java">  
-                    <input type="checkbox" id="java" class="coba"> Java </input>
-                  </label>
+  
+              <div class="input-date row mb-3">
+                <div class="col-6">
+                  <label for="input-start-date" class="form-label">Start Date</label>
+                  <input type="date" class="form-control" id="input-start-date" />
                 </div>
-                
-                <div class="kotak2">
-                  <label for="android">
-                    <input type="checkbox" id="android"> Android </input>
-                  </label>
-                  <label for="react">  
-                    <input type="checkbox" id="react"> React </input>
-                  </label>
+                <div class="col-6">
+                  <label for="input-end-date" class="form-label">End Date</label>
+                  <input type="date" class="form-control" id="input-end-date" />
                 </div>
               </div>
-            </div>
-            <div>
-              <label>Upload Image</label>
-                <div class="input-project-image-group">
-                <label for="input-project-image">
-                  <p>attach files</p>
-                  <img src="assets/img/file.png" alt="file" />
-                  <input type="file" id="input-project-image" hidden />
-                </label>
+  
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" class="form-control"></textarea>
               </div>
-            </div>
-            <div>
-              <button>Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <hr class="line">
-      <div class="tampil" id="tampil">
-        <h1>My Project</h1>
-        <div class="wadah" id="wadah">
-          <div class="card">
-            <img src="assets/img/phone.jpg" alt="phone">
-            <div class="spasi">
-              <a class="judul" href="project-detail.html" onclick="addProject()"><p> Dumbways Mobile App - 2021</p></a>
-              <p class="durasi">durasi : 3 bulan</p>
-            </div>
-            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium explicabo quae architecto aperiam at quis possimus voluptatibus ducimus minima.</p>
-            <div class="icon" id="icon">
-              <i class="fa-brands fa-google-play"></i>
-              <i class="fa-brands fa-android"></i>
-              <i class="fa-brands fa-java"></i>
-              <i class="fa-brands fa-react"></i>
-            </div>
-            <div class = "waktu">
-              <p>17, week 3, jan, 2023</p>
-            </div>
-            <div class="btn">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
+              <div class="mb-3">
+                <label for="tech" class="form-label">Technologies</label>
+                <div class="row">
+                  <div class="col-6 form-check">
+                    <input type="checkbox" class="form-check-input" id="playstore"> 
+                    <label for="playstore" class="form-check-label">playstore
+                    </label>
+                  </div>
+                  <div class="col-6 form-check">
+                    <input type="checkbox" id="java" class="form-check-input"> 
+                    <label for="java" class="form-check-label">Java  
+                    </label>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-6 form-check">
+                    <input type="checkbox" class="form-check-input" id="android">
+                    <label for="android" class="form-check-label">Android
+                    </label>
+                  </div>
+                  <div class="col-6 form-check">
+                    <input type="checkbox" class="form-check-input" id="react">
+                    <label for="react" class="form-check-label">React  
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label>Upload Image</label>
+                    <div class="input-project-image-group ">
+                      <label for="input-project-image">
+                      <div class="input-group mb-3">
+                        <input type="file" id="input-project-image" class="form-control">
+                        <label class="input-group-text" for="input-project-image"><img src="assets/img/file.png" alt=""></label>
+                      </div>
+                    </label>
+              </div>
+              <div class="text-end mt-3">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>            
+          
+
     </div>
     <script src="js/project.js"></script>
     <script src="js/index.js"></script>

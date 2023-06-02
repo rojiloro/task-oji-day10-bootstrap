@@ -8,10 +8,12 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #eaeaea !important;
 }
 
 nav {
   font-size: 20px;
+  margin-bottom: 60px;
   background-color: #f4f3f3;
 }
 
@@ -19,12 +21,9 @@ nav ul li .active {
   color: orangered !important;
 }
 
-section {
-  background-color: #eaeaea !important;
-}
-
 #myProject {
-  background-color: white;
+  background-color: white !important;
+  margin-top: 60px;
 }
 
 .container {
@@ -35,14 +34,13 @@ section {
 }
 
 .card {
-  width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.icon {
-  text-decoration: none;
-  color: black;
+.card .durasi {
+  margin-top: -40px !important;
 }
+
 /* nav {
   background-color: #f4f3f3;
     display: flex;
